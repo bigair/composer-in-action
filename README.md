@@ -216,6 +216,6 @@ require __DIR__ . '/vendor/autoload.php';
 
 ### 最佳化 autoloading files
 
---optimize (-o): 转换 PSR-0/4 autoloading 到 classmap 获得更快的载入速度。这特别适用于生产环境，但可能需要一些时间来运行，因此它目前不是默认设置。
---no-dev: 禁用 autoload-dev 规则。
+--optimize (-o): 轉換 PSR-0/4 autoloading 到 classmap 獲得更快的載入速度。  
+--no-dev: 禁用 autoload-dev 規則。
 
