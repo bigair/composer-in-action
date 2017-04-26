@@ -128,24 +128,24 @@ composer require monolog/monolog:1.0.*
 與直接編輯  `composer.json` 同效果
 
 
-### install package
+### composer install
 
 `composer install` 
 
-- 安裝參數
-    + --prefer-source
-    + --prefer-dist
+- 可用參數
+    + --prefer-source：
+    + --prefer-dist：
 
-> 參數 -v|vv|-vvv 能輸出執行 composer 過程內容，1 for normal output, 2 for more verbose output and 3 for debug  
+> 參數 -v|vv|vvv 能輸出過程訊息，1 for normal output, 2 for more verbose output and 3 for debug  
 
-- composer 將對 package 依賴自動安裝 
+- composer 會自動安裝  package 依賴
 
-- 安裝後會新增一些檔案
+- 安裝後會產生檔案
     + composer.lock
     + vendor/autoload.php
-    + vendor/$(package) 
+    + vendor/${package} 
 
-> 如果使用 `git` 管理專案，通常會在 .gitignore 加入 vendor/  
+> 假如使用 `git` 管理檔案，通常會在 .gitignore 加入 vendor/   
 
 
 ## PHP autoload
@@ -218,4 +218,3 @@ require __DIR__ . '/vendor/autoload.php';
 
 --optimize (-o): 轉換 PSR-0/4 autoloading 到 classmap 獲得更快的載入速度。  
 --no-dev: 禁用 autoload-dev 規則。
-
